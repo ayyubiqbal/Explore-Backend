@@ -51,9 +51,8 @@ class MyDB {
     /**
      * find ticket for a given user 
      * @param {string} username
-     * @returns {Array<Ticket>}
      */
-    findByUsername() {
+    findByUsername(username) {
         const tickets = this.tickets.filter(ticket => ticket.username === username);
         return tickets;
     }
